@@ -1,0 +1,15 @@
+@use "../abstracts/custom" as *;
+
+.searcher {
+  input {
+    width: 50%;
+    padding: 0.5rem 2rem;
+    border: 1px solid #ccc;
+    border-radius: 2rem;
+  }
+
+  button {
+    border: none;
+    background-color: transparent;
+  }
+}

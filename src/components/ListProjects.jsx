@@ -1,19 +1,27 @@
-import { Container, Row } from "react-bootstrap";
+import { Container, Row, Spinner } from "react-bootstrap";
 
 // Hooks
 import useProjects from "../hooks/useProjects";
 
 // Components
 import Project from "./Project";
+import Searcher from "./Searcher";
 
 const ListProjects = () => {
-  const { projects } = useProjects();
-
-  console.log(projects);
+  const { projects, loading } = useProjects();
 
   return (
     <Container>
+      <Searcher />
       <Row className="mt-2">
+        {loading && (
+          <Spinner
+            animation="grow"
+            variant="warning"
+            className="d-block m-auto"
+          />
+        )}
+
         {projects.map((project) => (
           <Project
             key={project.id}

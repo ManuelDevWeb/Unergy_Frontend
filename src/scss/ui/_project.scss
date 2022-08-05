@@ -23,5 +23,13 @@
         @include m.btnPrimary($tertiary);
       }
     }
+
+    .labelCard {
+      font-size: 1.2rem;
+    }
+
+    span {
+      margin-left: 0.2rem;
+    }
   }
 }
