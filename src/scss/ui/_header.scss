@@ -1,5 +1,9 @@
 @use "../abstracts/custom" as *;
 
-.header-primary {
+.header {
   color: $primary;
+
+  .logo {
+    width: 30rem;
+  }
 }

@@ -1,0 +1,17 @@
+@use "./custom" as *;
+
+@mixin btnPrimary($color) {
+  color: $white;
+  background-color: $color;
+  border-color: $color;
+  font-weight: 500;
+  border-radius: 2rem;
+  display: block;
+  width: 100%;
+
+  @include media-breakpoint-up(md) {
+    margin: 0 auto;
+    width: auto;
+    padding: 0.5rem 3rem;
+  }
+}
